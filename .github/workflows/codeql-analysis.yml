@@ -30,7 +30,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        sudo apt-get install g++ scons libsdl2-dev libpng12-dev libjpeg-turbo8-dev libgl1-mesa-dev libglew-dev libopenal-dev libmad0-dev
+        sudo apt-get install g++ scons libsdl2-dev libpng-dev libjpeg-turbo8-dev libgl1-mesa-dev libglew-dev libopenal-dev libmad0-dev
         scons
         ./endless-sky
     - name: Perform CodeQL Analysis
